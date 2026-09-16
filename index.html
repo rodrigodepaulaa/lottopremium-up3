@@ -10,8 +10,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <!-- ===== VTURB: cole aqui os preloads/dns-prefetch do player ===== -->
-<!-- VTURB_HEAD_START -->
-<!-- VTURB_HEAD_END -->
+<script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+<link rel="preload" href="https://scripts.converteai.net/b94a412c-40ff-4d14-97fe-39aed6062e4b/players/6aaa02989e962e6e2b6ae3c9/v4/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/b94a412c-40ff-4d14-97fe-39aed6062e4b/6aaa02919e962e6e2b6ae3c8/main.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://license.vturb.com">
 
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
@@ -133,16 +139,6 @@
     text-align:center;
     color:var(--ink);
   }
-  .decline{
-    margin-top:22px;
-    text-align:center;
-  }
-  .decline a{
-    font-size:13px;
-    color:var(--muted);
-    text-decoration:underline;
-    cursor:pointer;
-  }
   footer{
     margin-top:30px;
     text-align:center;
@@ -178,8 +174,7 @@
 
     <!-- ===== VTURB: cole o embed do player dentro desta div ===== -->
     <div class="video-slot">
-      <!-- VTURB_PLAYER_START -->
-      <!-- VTURB_PLAYER_END -->
+      <vturb-smartplayer id="vid-6aaa02989e962e6e2b6ae3c9" style="display: block; margin: 0 auto; width: 100%; "><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 56.20608899297424% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/b94a412c-40ff-4d14-97fe-39aed6062e4b/players/6aaa02989e962e6e2b6ae3c9/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
     </div>
 
     <p class="sound">🔊 Certifique-se de que o seu som está ligado.</p>
@@ -191,9 +186,6 @@
 
     <p class="price">R$ 97,00</p>
 
-    <div class="decline">
-      <a href="#" payt_action="decline_offer">Não, obrigado. Não quero essa oferta.</a>
-    </div>
 
   </div>
 
