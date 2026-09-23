@@ -149,6 +149,17 @@
     0%,100%{transform:scale(1)}
     50%{transform:scale(1.03)}
   }
+  .decline{
+    margin-top:18px;
+    text-align:center;
+  }
+  .decline a{
+    font-size:13.5px;
+    color:var(--muted);
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  .decline a:hover{color:var(--ink)}
   .price{
     margin-top:16px;
     font-size:17px;
@@ -225,6 +236,14 @@
     </div>
 
     <p class="price">R$ 97,00</p>
+
+    <div class="decline"><a id="decline" href="https://lottopremiumobrigado.vercel.app?refused=1">Não quero essa oferta</a></div>
+    <script>
+      (function () {
+        var el = document.getElementById('decline');
+        if (el && location.search) el.href = el.href + '&' + location.search.slice(1);
+      })();
+    </script>
 
 
   </div>
