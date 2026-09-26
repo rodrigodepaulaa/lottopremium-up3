@@ -149,6 +149,18 @@
     0%,100%{transform:scale(1)}
     50%{transform:scale(1.03)}
   }
+  .price-oculto{
+    position:absolute;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    padding:0;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    clip-path:inset(50%);
+    white-space:nowrap;
+    border:0;
+  }
   .decline{
     margin-top:18px;
     text-align:center;
@@ -235,7 +247,8 @@
       <a href="#" payt_action="oneclick_buy" data-object="RAGGEY-R29M9A">EU QUERO COMPRAR AGORA</a>
     </div>
 
-    <p class="price">R$ 97,00</p>
+    <!-- Preço mantido no HTML para a validação da Payt, oculto para o visitante -->
+    <p class="price price-oculto">R$ 119,00</p>
 
     <div class="decline"><a id="decline" href="https://lottopremiumobrigado.vercel.app?refused=1">Não quero essa oferta</a></div>
     <script>
